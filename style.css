@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#contenedor {
+    width: 900px;
+    height: 500px;
+    text-align: center;
+    /*Estas 3 lineas se encargan de centrar el div vertical y horizontalmente*/
+    position: absolute;
+    inset: 0;
+    margin: auto;
+}
+
+#calculadora {
+    background: white;
+    /*con estas 3 linas vamos a hacer que quede lado a lado*/
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+#detalle {
+    background: #ff416c;
+    width: 50%;
+    height: 100%;
+    float: left;
+    color: #f6f5f7;
+}
+
+.contenido {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
+    padding: 40px;
+}
+
+input {
+    width: 70%;
+    padding: 12px 15px;
+    border: none;
+    background-color: #eee;
+}
+
+button {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 12 px 45px;
+    border-radius: 30px;
+    background-color: #ff416c;
+    border: 1px solid #ff416c;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: transform 20ms ease-in;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+#error {
+    color: red;
+    font-weight: bold;
+    display: none;
+}
+
+.resultado {
+    color: #0a81d1;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 5px;
+    display: none;
+}
+
